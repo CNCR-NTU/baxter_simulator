@@ -15,6 +15,8 @@ find_package(catkin
 find_package(cmake_modules REQUIRED)
 find_package(Eigen REQUIRED)
 
+set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
+
 catkin_package(
   INCLUDE_DIRS include
   CATKIN_DEPENDS

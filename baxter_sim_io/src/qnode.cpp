@@ -39,6 +39,11 @@
 #include <baxter_sim_io/qnode.hpp>
 #include <signal.h>
 
+#ifndef Q_MOC_RUN
+#include <ros/ros.h>
+#include <ros/network.h>
+#endif
+
 namespace baxter_sim_io {
 
 const std::string BAXTER_LEFTIL_TOPIC =
